@@ -1,0 +1,59 @@
+<svg width="1440" height="900" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="orb1" cx="25%" cy="25%" r="50%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#7C3AED" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb2" cx="75%" cy="75%" r="50%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#3B82F6" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb3" cx="55%" cy="40%" r="40%">
+      <stop offset="0%" stop-color="#EC4899" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#EC4899" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb4" cx="15%" cy="80%" r="30%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="white" stroke-opacity="0.02" stroke-width="0.5"/>
+    </pattern>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1440" height="900" fill="#08080e"/>
+  <rect width="1440" height="900" fill="url(#grid)"/>
+  <rect x="0" y="0" width="1440" height="900" fill="url(#orb1)"/>
+  <rect x="0" y="0" width="1440" height="900" fill="url(#orb2)"/>
+  <rect x="0" y="0" width="1440" height="900" fill="url(#orb3)"/>
+  <rect x="0" y="0" width="1440" height="900" fill="url(#orb4)"/>
+  <!-- Decorative dots -->
+  <g fill="#7C3AED" opacity="0.15">
+    <circle cx="120" cy="180" r="2"/><circle cx="280" cy="90" r="1.5"/>
+    <circle cx="450" cy="220" r="1"/><circle cx="680" cy="120" r="2.5"/>
+    <circle cx="900" cy="200" r="1.5"/><circle cx="1100" cy="80" r="1"/>
+    <circle cx="1300" cy="160" r="2"/><circle cx="200" cy="400" r="1.5"/>
+    <circle cx="500" cy="450" r="2"/><circle cx="800" cy="380" r="1"/>
+    <circle cx="1050" cy="500" r="1.5"/><circle cx="1350" cy="420" r="2"/>
+    <circle cx="300" cy="650" r="1"/><circle cx="600" cy="700" r="2"/>
+    <circle cx="1000" cy="680" r="1.5"/><circle cx="1200" cy="780" r="1"/>
+  </g>
+  <g fill="#3B82F6" opacity="0.12">
+    <circle cx="180" cy="620" r="2"/><circle cx="350" cy="780" r="1.5"/>
+    <circle cx="550" cy="520" r="1"/><circle cx="750" cy="650" r="2"/>
+    <circle cx="950" cy="580" r="1.5"/><circle cx="1150" cy="700" r="1"/>
+    <circle cx="1380" cy="550" r="2"/>
+  </g>
+  <!-- Subtle gradient line accents -->
+  <g stroke="url(#heroGrad)" stroke-opacity="0.06" stroke-width="0.5" fill="none">
+    <line x1="0" y1="200" x2="1440" y2="200"/>
+    <line x1="0" y1="400" x2="1440" y2="400"/>
+    <line x1="0" y1="600" x2="1440" y2="600"/>
+    <line x1="0" y1="800" x2="1440" y2="800"/>
+  </g>
+</svg>

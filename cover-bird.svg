@@ -1,0 +1,38 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f1a"/>
+      <stop offset="100%" style="stop-color:#1a1a2e"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffd700"/>
+      <stop offset="100%" style="stop-color:#f0a500"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)"/>
+  <circle cx="400" cy="180" r="120" fill="none" stroke="rgba(255,215,0,0.1)" stroke-width="1"/>
+  <circle cx="400" cy="180" r="80" fill="none" stroke="rgba(255,215,0,0.15)" stroke-width="1"/>
+  <!-- 鸟 -->
+  <g transform="translate(400,180)" fill="none" stroke="url(#gold)" stroke-width="2.5" stroke-linecap="round">
+    <!-- 身体 -->
+    <ellipse cx="0" cy="5" rx="30" ry="18" fill="rgba(255,215,0,0.08)" stroke="rgba(255,215,0,0.6)"/>
+    <!-- 左翅 -->
+    <path d="M-25,-5 Q-45,-40 -55,-35 Q-40,-25 -28,-12" fill="rgba(255,215,0,0.1)"/>
+    <path d="M-55,-35 Q-60,-45 -65,-42" stroke-width="2"/>
+    <!-- 右翅 -->
+    <path d="M25,-5 Q45,-40 55,-35 Q40,-25 28,-12" fill="rgba(255,215,0,0.1)"/>
+    <path d="M55,-35 Q60,-45 65,-42" stroke-width="2"/>
+    <!-- 头 -->
+    <circle cx="0" cy="-18" r="12" fill="rgba(255,215,0,0.1)" stroke="rgba(255,215,0,0.6)"/>
+    <!-- 眼 -->
+    <circle cx="3" cy="-20" r="2" fill="#ffd700"/>
+    <!-- 喙 -->
+    <path d="M12,-18 L20,-16 L12,-14" stroke-width="2"/>
+  </g>
+  <!-- 光晕 -->
+  <circle cx="400" cy="180" r="140" fill="url(#gold)" opacity="0.03"/>
+  <circle cx="400" cy="180" r="200" fill="url(#gold)" opacity="0.02"/>
+  <!-- 文字 -->
+  <text x="400" y="300" text-anchor="middle" font-family="'Noto Sans SC',sans-serif" font-size="24" font-weight="300" fill="rgba(255,255,255,0.4)" letter-spacing="4">每周 GitHub 扫货时间</text>
+  <text x="400" y="340" text-anchor="middle" font-family="'Noto Sans SC',sans-serif" font-size="14" fill="rgba(255,255,255,0.2)" letter-spacing="6">WEEKLY TRENDING · 2026.06</text>
+</svg>

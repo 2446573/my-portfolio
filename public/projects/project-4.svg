@@ -1,0 +1,38 @@
+<svg width="600" height="340" viewBox="0 0 600 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0a0d0a"/><stop offset="100%" stop-color="#12140a"/></linearGradient>
+<linearGradient id="gl" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#10B981" stop-opacity="0.15"/><stop offset="100%" stop-color="#34D399" stop-opacity="0.05"/></linearGradient>
+<linearGradient id="ac" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#10B981" stop-opacity="0.8"/><stop offset="100%" stop-color="#34D399" stop-opacity="0.6"/></linearGradient>
+<filter id="sg"><feGaussianBlur stdDeviation="2" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="600" height="340" fill="url(#bg)"/><rect width="600" height="340" fill="url(#gl)"/>
+<g stroke="white" stroke-opacity="0.03" stroke-width="0.5">
+<line x1="0" y1="85" x2="600" y2="85"/><line x1="0" y1="170" x2="600" y2="170"/>
+<line x1="0" y1="255" x2="600" y2="255"/><line x1="150" y1="0" x2="150" y2="340"/>
+<line x1="300" y1="0" x2="300" y2="340"/><line x1="450" y1="0" x2="450" y2="340"/>
+</g>
+<circle cx="30" cy="30" r="15" fill="#10B981" opacity="0.08"/>
+<circle cx="570" cy="310" r="20" fill="#34D399" opacity="0.06"/>
+<rect x="25" y="25" width="550" height="290" rx="12" fill="#16180a" stroke="#10B981" stroke-opacity="0.15" stroke-width="1"/>
+<rect x="25" y="25" width="550" height="36" rx="12" fill="#1a1a0a"/><rect x="25" y="49" width="550" height="12" fill="#1a1a0a"/>
+<circle cx="48" cy="43" r="5" fill="#FF5F57"/><circle cx="65" cy="43" r="5" fill="#FEBC2E"/><circle cx="82" cy="43" r="5" fill="#28C840"/>
+<text x="300" y="40" text-anchor="middle" fill="#10B981" opacity="0.6" font-family="system-ui" font-size="9" font-weight="600" letter-spacing="2" filter="url(#sg)">DevTools</text>
+<g transform="translate(300, 110)" fill="none">
+<circle cx="0" cy="0" r="45" fill="#10B981" opacity="0.1"/>
+<path d="M14.7 6.3a1 1 0 00-1.4-1.4L10 8.58 7.7 6.3a1 1 0 00-1.4 1.4l2.3 2.3-2.3 2.3a1 1 0 001.4 1.4l2.3-2.28 2.3 2.28a1 1 0 001.4-1.4L12.42 10l2.28-2.3z" fill="url(#ac)" transform="scale(2) translate(-12, -12)"/>
+</g>
+<rect x="70" y="200" width="200" height="6" rx="3" fill="url(#ac)" opacity="0.3"/>
+<rect x="70" y="215" width="160" height="4" rx="2" fill="white" opacity="0.1"/>
+<rect x="70" y="227" width="180" height="4" rx="2" fill="white" opacity="0.07"/>
+<rect x="70" y="245" width="140" height="4" rx="2" fill="white" opacity="0.05"/>
+<rect x="330" y="200" width="200" height="80" rx="8" fill="#10B981" opacity="0.06"/>
+<rect x="345" y="215" width="100" height="5" rx="2.5" fill="url(#ac)" opacity="0.4"/>
+<rect x="345" y="228" width="70" height="3" rx="1.5" fill="white" opacity="0.15"/>
+<rect x="345" y="240" width="85" height="3" rx="1.5" fill="white" opacity="0.1"/>
+<rect x="345" y="258" width="55" height="3" rx="1.5" fill="white" opacity="0.08"/>
+<rect x="25" y="280" width="550" height="35" fill="#14160a" opacity="0.5"/>
+<rect x="25" y="291" width="550" height="24" fill="#14160a" opacity="0.3"/>
+<rect x="40" y="296" width="60" height="4" rx="2" fill="#34D399" opacity="0.15"/>
+<rect x="115" y="296" width="40" height="4" rx="2" fill="white" opacity="0.06"/>
+<circle cx="550" cy="298" r="4" fill="#10B981" opacity="0.2"/>
+</svg>
