@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>关于 | Alex Chen</title>
+<meta name="description" content="关于 Alex Chen — 全栈开发者、UI/UX 设计师。">
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/styles.css">
+<style>.about-header{text-align:center;margin-bottom:80px}.about-grid{display:flex;flex-direction:column;align-items:center;gap:40px;max-width:896px;margin:0 auto}@media(min-width:768px){.about-grid{flex-direction:row}}.avatar-wrap{flex-shrink:0;position:relative;width:160px;height:160px;border-radius:50%;overflow:hidden;border:2px solid rgba(124,58,237,0.3)}@media(min-width:640px){.avatar-wrap{width:192px;height:192px}}.avatar-wrap::after{content:"";position:absolute;inset:-2px;border-radius:inherit;background:linear-gradient(135deg,var(--purple),var(--blue),var(--neon-pink));opacity:0;filter:blur(15px);z-index:-1;transition:opacity 0.3s}.avatar-wrap:hover::after{opacity:0.6}.bio{color:var(--text-secondary);line-height:1.7;font-size:16px}.skills-grid{display:grid;grid-template-columns:1fr;gap:24px;max-width:1152px;margin:0 auto;padding:0 24px}@media(min-width:640px){.skills-grid{grid-template-columns:repeat(2,1fr);padding:0 32px}}@media(min-width:1024px){.skills-grid{grid-template-columns:repeat(4,1fr);padding:0 48px}}.skill-card{background:var(--surface-lighter);border-radius:16px;border:1px solid rgba(42,42,58,0.5);padding:24px;transition:border-color 0.3s}.skill-card:hover{border-color:rgba(124,58,237,0.3)}.skill-cat{font-size:12px;font-weight:600;color:var(--purple-light);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:16px}.skill-items{display:flex;flex-wrap:wrap;gap:8px}.skill-item{padding:6px 12px;font-size:12px;font-weight:500;background:rgba(10,10,15,0.6);color:var(--text-secondary);border-radius:8px;border:1px solid rgba(42,42,58,0.3);cursor:default;transition:all 0.2s}.skill-item:hover{background:rgba(124,58,237,0.1);color:var(--purple-light);border-color:rgba(124,58,237,0.3)}.timeline-wrap{position:relative;max-width:768px;margin:0 auto;padding:0 24px}.timeline-line{position:absolute;left:32px;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,var(--purple),var(--blue),transparent)}.timeline-item{position:relative;padding-left:64px;margin-bottom:40px}.timeline-dot{position:absolute;left:20px;top:4px;width:28px;height:28px;border-radius:50%;background:var(--surface-lighter);border:2px solid var(--purple);display:flex;align-items:center;justify-content:center}.timeline-card{background:var(--surface-lighter);border-radius:12px;border:1px solid rgba(42,42,58,0.5);padding:20px;transition:border-color 0.3s}.timeline-card:hover{border-color:rgba(124,58,237,0.3)}.contact-card{max-width:672px;margin:0 auto;padding:0 24px}.contact-inner{text-align:center;background:linear-gradient(135deg,rgba(76,29,149,0.2),var(--surface-lighter),rgba(59,130,246,0.1));border-radius:24px;border:1px solid rgba(42,42,58,0.5);padding:40px 56px}@media(min-width:640px){.contact-inner{padding:56px}}.btn-row{display:flex;flex-wrap:wrap;justify-content:center;gap:16px}.btn-outline{display:inline-flex;align-items:center;gap:8px;padding:10px 28px;border-radius:12px;border:1px solid var(--border);color:var(--text-secondary);text-decoration:none;font-weight:500;transition:all 0.2s;font-size:14px}.btn-outline:hover{color:var(--text-primary);border-color:rgba(124,58,237,0.5)}</style>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="noise-bg">
+<header id="header" style="position:fixed;top:0;left:0;right:0;z-index:50;transition:all 0.3s;background:rgba(10,10,15,0.8);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border-bottom:1px solid rgba(42,42,58,0.5)">
+<nav class="container" style="display:flex;align-items:center;justify-content:space-between;height:64px">
+<a href="/" class="gradient-text" style="font-size:20px;font-weight:700;font-family:var(--font-heading);text-decoration:none">AC<span style="color:var(--text-muted)">.</span></a>
+<div style="display:none;gap:4px" class="desktop-nav">
+<a href="/" style="padding:8px 16px;border-radius:8px;font-size:14px;font-weight:500;color:var(--text-secondary);text-decoration:none">首页</a>
+<a href="/projects" style="padding:8px 16px;border-radius:8px;font-size:14px;font-weight:500;color:var(--text-secondary);text-decoration:none">项目</a>
+<a href="/about" style="padding:8px 16px;border-radius:8px;font-size:14px;font-weight:500;color:white;text-decoration:none;background:rgba(255,255,255,0.05);border:1px solid rgba(42,42,58,0.5)">关于</a>
+</div></nav></header>
+<main style="flex:1">
+<div style="padding-top:96px;padding-bottom:96px">
+<section class="container" style="margin-bottom:80px">
+<div class="about-header"><div class="section-badge">关于我</div>
+<h1 class="section-h2">我是 <span class="gradient-text">谁</span></h1></div>
+<div class="about-grid">
+<div class="avatar-wrap"><img src="/images/avatar.svg" alt="头像" style="width:100%;height:100%;object-fit:cover"></div>
+<div class="bio">
+<p style="margin-bottom:16px;font-size:18px">我是一名全栈开发者和设计师，热衷于用现代化的技术打造高性能的 Web 体验。多年的全栈开发经验让我能够从架构到实现，将创意通过简洁的代码和精心的设计变为现实。</p>
+<p style="margin-bottom:24px;font-size:18px">我专注于 React、Next.js 和 TypeScript 技术栈，同时乐于探索新技术。不写代码的时候，我喜欢参与开源项目、写技术博客，或者捣鼓各种 AI 工具。</p>
+<div class="btn-row" style="justify-content:flex-start">
+<a href="mailto:hello@alexchen.dev" class="btn-glow" style="padding:10px 20px;font-size:14px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> 联系我</a>
+<a href="/resume.pdf" class="btn-outline" style="padding:10px 20px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> 下载简历</a>
+</div></div></div></section>
+<section style="margin-bottom:80px">
+<div style="text-align:center;margin-bottom:48px">
+<h2 class="section-h2">技能与 <span class="gradient-text">工具</span></h2>
+<p style="color:var(--text-secondary)">我日常使用的技术和工具。</p>
+</div>
+<div class="skills-grid">
+<div class="skill-card"><h3 class="skill-cat">前端</h3>
+<div class="skill-items">
+<span class="skill-item">React</span>
+<span class="skill-item">Next.js</span>
+<span class="skill-item">TypeScript</span>
+<span class="skill-item">Tailwind CSS</span>
+<span class="skill-item">Vue.js</span>
+<span class="skill-item">HTML5/CSS3</span>
+<span class="skill-item">Framer Motion</span>
+<span class="skill-item">Redux/Zustand</span></div></div>
+<div class="skill-card"><h3 class="skill-cat">后端</h3>
+<div class="skill-items">
+<span class="skill-item">Node.js</span>
+<span class="skill-item">Python</span>
+<span class="skill-item">PostgreSQL</span>
+<span class="skill-item">MongoDB</span>
+<span class="skill-item">Prisma</span>
+<span class="skill-item">REST API</span>
+<span class="skill-item">GraphQL</span>
+<span class="skill-item">Redis</span></div></div>
+<div class="skill-card"><h3 class="skill-cat">工具与运维</h3>
+<div class="skill-items">
+<span class="skill-item">Git</span>
+<span class="skill-item">Docker</span>
+<span class="skill-item">VS Code</span>
+<span class="skill-item">Figma</span>
+<span class="skill-item">Vercel</span>
+<span class="skill-item">GitHub Actions</span>
+<span class="skill-item">AWS</span>
+<span class="skill-item">Linux</span></div></div>
+<div class="skill-card"><h3 class="skill-cat">设计</h3>
+<div class="skill-items">
+<span class="skill-item">UI/UX 设计</span>
+<span class="skill-item">Figma</span>
+<span class="skill-item">设计系统</span>
+<span class="skill-item">响应式设计</span>
+<span class="skill-item">原型设计</span>
+<span class="skill-item">无障碍设计</span></div></div>
+</div></section>
+<section style="margin-bottom:80px">
+<div style="text-align:center;margin-bottom:48px">
+<h2 class="section-h2">我的 <span class="gradient-text">经历</span></h2>
+</div>
+<div class="timeline-wrap">
+<div class="timeline-line"></div>
+<div class="timeline-item"><div class="timeline-dot"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#A78BFA" stroke-width="2"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div><div class="timeline-card"><div style="display:flex;flex-direction:column;gap:4px;margin-bottom:8px"><div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:4px"><h3 style="font-size:16px;font-weight:600;font-family:var(--font-heading);color:var(--text-primary)">高级前端开发工程师</h3><span style="font-size:12px;color:var(--purple-light);display:flex;align-items:center;gap:4px"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>2023 - 至今</span></div><div style="display:flex;align-items:center;gap:12px;font-size:12px;color:var(--text-muted)"><span style="display:flex;align-items:center;gap:4px"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>上海</span><span style="color:rgba(42,42,58,0.8)">&middot;</span><span>Tech Innovation Co.</span></div></div><p style="font-size:14px;color:var(--text-secondary);line-height:1.6">负责服务 100K+ 用户的 SaaS 平台前端架构设计，推动 Next.js 和 TypeScript 在全团队的普及。</p></div></div><div class="timeline-item"><div class="timeline-dot"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#A78BFA" stroke-width="2"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div><div class="timeline-card"><div style="display:flex;flex-direction:column;gap:4px;margin-bottom:8px"><div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:4px"><h3 style="font-size:16px;font-weight:600;font-family:var(--font-heading);color:var(--text-primary)">全栈开发工程师</h3><span style="font-size:12px;color:var(--purple-light);display:flex;align-items:center;gap:4px"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>2021 - 2023</span></div><div style="display:flex;align-items:center;gap:12px;font-size:12px;color:var(--text-muted)"><span style="display:flex;align-items:center;gap:4px"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>远程</span><span style="color:rgba(42,42,58,0.8)">&middot;</span><span>StartupXYZ</span></div></div><p style="font-size:14px;color:var(--text-secondary);line-height:1.6">负责核心产品功能的从零到一开发，通过性能优化将页面加载时间缩短 40%。</p></div></div><div class="timeline-item"><div class="timeline-dot"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#60A5FA" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div><div class="timeline-card"><div style="display:flex;flex-direction:column;gap:4px;margin-bottom:8px"><div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:4px"><h3 style="font-size:16px;font-weight:600;font-family:var(--font-heading);color:var(--text-primary)">计算机科学 学士</h3><span style="font-size:12px;color:var(--purple-light);display:flex;align-items:center;gap:4px"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>2017 - 2021</span></div><div style="display:flex;align-items:center;gap:12px;font-size:12px;color:var(--text-muted)"><span style="display:flex;align-items:center;gap:4px"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Boston, MA</span><span style="color:rgba(42,42,58,0.8)">&middot;</span><span>University of Technology</span></div></div><p style="font-size:14px;color:var(--text-secondary);line-height:1.6">主修人机交互与软件工程。院长名单入选者，发表过 Web 无障碍相关研究论文。</p></div></div></div></section>
+<section class="contact-card"><div class="contact-inner"><h2 class="section-h2">与我 <span class="gradient-text">联系</span></h2><p style="color:var(--text-secondary);margin-bottom:32px;max-width:448px;margin-left:auto;margin-right:auto">有问题想交流，或者想一起合作？期待你的来信。</p><div class="btn-row"><a href="mailto:hello@alexchen.dev" class="btn-glow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> 说声 Hi</a><a href="/resume.pdf" class="btn-outline"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> 简历</a></div></div></section>
+</div></main>
+<footer style="border-top:1px solid rgba(42,42,58,0.3);background:rgba(10,10,15,0.8);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);padding:32px 0">
+<div class="container"><div style="display:flex;flex-direction:column;gap:24px;align-items:center">
+<a href="/" class="gradient-text" style="font-size:18px;font-weight:700;font-family:var(--font-heading);text-decoration:none">Alex Chen<span style="color:var(--text-muted)">.</span></a>
+<div style="display:flex;gap:12px">
+<a href="https://github.com/yourusername" style="display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:8px;color:var(--text-muted);text-decoration:none;transition:all 0.2s" aria-label="GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></a>
+<a href="https://twitter.com/yourusername" style="display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:8px;color:var(--text-muted);text-decoration:none;transition:all 0.2s" aria-label="X"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l11.733 16h4.267l-11.733 -16z"/><path d="M4 20l6.768 -6.768m2.46 -2.46L20 4"/></svg></a>
+<a href="https://linkedin.com/in/yourusername" style="display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:8px;color:var(--text-muted);text-decoration:none;transition:all 0.2s" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+<a href="mailto:hello@alexchen.dev" style="display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:8px;color:var(--text-muted);text-decoration:none;transition:all 0.2s" aria-label="邮箱"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
+</div></div>
+<div style="margin-top:24px;padding-top:16px;border-top:1px solid rgba(42,42,58,0.2);display:flex;flex-direction:column;gap:8px;align-items:center;font-size:12px;color:var(--text-muted)">
+<p>&copy; 2026 Alex Chen. 保留所有权利。</p>
+<p>用 <span style="color:#EC4899">&hearts;</span> 构建 — Next.js &amp; Tailwind CSS</p>
+</div></div></footer>
+<script>if(window.innerWidth>=768)document.querySelector(".desktop-nav").style.display="flex";</script>
+</body>
+</html>
